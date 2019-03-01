@@ -12,6 +12,7 @@ aside {
     display: inline-block;
     width: 20%;
     height:100%;
+    margin-top:.5rem;
     float: left;
     background-color: #76768e;
     color: white;
@@ -81,6 +82,7 @@ div {
 
 #messages-list {
     margin : auto 0;
+    width: 80%;
     height: 35em;
     overflow-y: scroll;
     border: 1px blue solid;
@@ -144,3 +146,4 @@ div {
     width: 95%;
     bottom : 2em;
     height: 5em;
+    margin-top: 10rem;
