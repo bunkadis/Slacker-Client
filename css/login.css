@@ -1,100 +1,60 @@
-* {
-				box-sizing: border-box;
-				font-family: 'Montserrat', sans-serif;
-			}
-			html, body {
-				height : 100%;
-				margin : 0px;
-			}
-			.main-section {
-				display :inline-block;
-				width : 75%;		
-				padding : 10px 10px;	
-				height: 100%;
-				margin-top : 2.5rem;
-			}
-			div {
-				display :inline-block;
-			}
-			#messages-list {
-				margin : auto 0;
-    			height: 42em;
-    			overflow-y: scroll;
-    			border: 1px blue solid;		
-    			padding: 0.2rem 1rem;		
-			}
-			.message-row {
-				display: inline-block;
-				width :100%;
-				margin-bottom:30px;
-			}
-			.message-image {
-				display : inline-block;
-				width : 10%;	
-				float : left;
-				min-width: 30px;
-				max-width: 30px;			
-			}
-			.message-image img {
-				max-width: 60px;
-			}
-			.message-meta-text {
-				display : inline-block;
-				width : 90%;	
-				float : right;	
-				padding : 0.2em 0.2em 0.2em 0.2em;					
-			}				
-			.message-text {
-				display : inline-block;
-				width : 100%;	
-				float : left;	
-			}	
-			.message-time {
-				display : inline-block;
-				font-size: 0.8rem;	
-			}				
-	
-			.message-author {
-				display: inline-block;
-				vertical-align: top;				
-				font-weight: bold;	
-				padding : 0.2em 2em 0.2em 0em;
-				width : 5rem;	
-			}		
-			.message-box {
-				width : 80%;
-				font-size: 1em;
-				margin : 1em, auto;
-				height : 5em;
-			}		
-			.footer-block {
-				vertical-align: bottom;
-				position: fixed;
-				width: 95%;
-				bottom : 2em;
-				height: 5em;
-			}
-nav{
-  float:left;
-  background:#471c9c;
-  width: 15%;
-  height: 100%;
-  display: inline;
-  margin: 0;
-  padding: 0;
-  margin-right: 20px;
-  margin-top: -1.5em;
+body {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  color : #471c9c;
 }
-.nav-button{
-  color: white;
-  float: left;
+
+aside {
+  width: 30%;
+  display : inline-block;
+  padding : 30px;
+}
+
+aside img {
+  border-radius:5%;
+  width: 100%;
+  margin:50px;
+}
+
+main {
   width: 60%;
-  background-color: #471c9c;
-  padding: 5%;
+  vertical-align:top;
+  display: inline-block;
+  padding-top: 110px;
+  padding-left: 44px;
 }
-li{
-  list-style-type: none;
+
+section, h1 {
+  display : inline-block;
+  width : 100%;
 }
-.Channels{
-  font-weight: bold;
+h1 {
+  font-size:30pt;
+}
+h2 {
+  font-size:20pt;
+  margin-top: -10px;
+}
+h3 {
+  color: #808080;
+  font-size:12pt;
+  margin-top: -5px;
+}
+
+@media (max-width: 768px) {
+    aside {
+        width:100%;
+    }
+    
+    main{
+        padding-top:inherit;
+        width: 100%;
+        height:auto;
+    }
+    
+    aside img {
+        width: 50%;
+        height :auto;
+        margin:auto
+    }
 }
